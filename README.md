@@ -32,7 +32,7 @@ a. **Flux and Torque Estimator**: Calculates the stator flux magnitude, flux ang
 
 b. **Torque Estimator**: Calculates the stator flux magnitude, flux angle (sector), and electromagnetic torque based on the motor's stator voltages and currents.
 
-![Figure : Torque Estimator](Images/estimation_torque_subsystem_border.png)
+![Figure 3: Torque Estimator](Images/estimation_torque_subsystem_border.png)
 
 *
 c. **Hysteresis Comparators**: Two-level comparators for torque and three-level comparators for flux that compare the estimated values with the reference commands.
@@ -44,7 +44,7 @@ The core of the control strategy is the optimal switching table, which is implem
 
 The complete implementation is shown below:
 
-![Switching Table Code](https://gist-it.appspot.com/github/greattomar/35a14e939093ce76a17e7cace8ee59ca)
+![Figure 4: Swithching Table Code](Images/Code_matlab.png)
 
 
 ---
