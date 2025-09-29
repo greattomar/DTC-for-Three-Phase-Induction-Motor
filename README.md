@@ -4,7 +4,7 @@ This repository contains the documentation and simulation results for a Direct T
 
 ---
 
-## 📖 Project Overview
+## Project Overview
 
 Direct Torque Control (DTC) is a sophisticated vector control technique used for the precise control of AC induction motors. Unlike other vector control methods, DTC does not require pulse-width modulation (PWM) or current regulators. Instead, it directly controls the motor's stator flux and electromagnetic torque by selecting the optimal inverter voltage vector.
 
@@ -15,7 +15,7 @@ Direct Torque Control (DTC) is a sophisticated vector control technique used for
 
 ---
 
-##  Simulink Model Architecture
+## Simulink Model Architecture
 
 The control system was designed and simulated in Simulink. The model consists of several key subsystems that work together to achieve precise torque control.
 
@@ -33,7 +33,7 @@ The main components are:
 
 ---
 
-## 📈 Simulation Results
+## Simulation Results
 
 The simulation was run to evaluate the performance of the DTC controller under various operating conditions. The following plots demonstrate the system's effectiveness.
 
@@ -65,7 +65,7 @@ This graph displays the three-phase stator currents ($I_a, I_b, I_c$). The sinus
 
 ---
 
-## 🚀 How to Replicate This Project
+## How to Replicate This Project
 
 Since the `.slx` file is not provided, you can replicate this project by following these steps:
 
@@ -76,6 +76,6 @@ Since the `.slx` file is not provided, you can replicate this project by followi
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
