@@ -38,7 +38,13 @@ b. **Torque Estimator**: Calculates the stator flux magnitude, flux angle (secto
 c. **Hysteresis Comparators**: Two-level comparators for torque and three-level comparators for flux that compare the estimated values with the reference commands.
 d. **Optimal Switching Table**: Selects the appropriate inverter voltage vector based on the outputs from the hysteresis comparators and the current flux sector.
 
-https://gist.github.com/greattomar/35a14e939093ce76a17e7cace8ee59ca
+### Optimal Switching Table Logic
+
+The core of the control strategy is the optimal switching table, which is implemented in an **Embedded MATLAB Function** block. This code determines which voltage vector the inverter should apply based on the digitized errors from the torque and flux hysteresis controllers, as well as the current stator flux sector.
+
+The complete implementation is shown below:
+
+![Switching Table Code](https://gist-it.appspot.com/github/greattomar/35a14e939093ce76a17e7cace8ee59ca)
 
 
 ---
