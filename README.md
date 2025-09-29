@@ -41,7 +41,11 @@ d. **Optimal Switching Table**: Selects the appropriate inverter voltage vector 
 
 The core of the control strategy is the optimal switching table, which is implemented in an **Embedded MATLAB Function** block. This code determines which voltage vector the inverter should apply based on the digitized errors from the torque and flux hysteresis controllers, as well as the current stator flux sector.
 
-matlab
+### Optimal Switching Table Logic
+
+The core of the control strategy is the optimal switching table, which is implemented in an **Embedded MATLAB Function** block. This code determines which voltage vector the inverter should apply based on the digitized errors from the torque and flux hysteresis controllers, as well as the current stator flux sector.
+
+* ```matlab
 function V = fcn(d_psi, d_Te, sector)
 % This function implements the optimal switching table for a Direct Torque
 % Control (DTC) system.
@@ -134,7 +138,6 @@ switch sector
             end
         end
 end
-
 ---
 
 ## Simulation Results
