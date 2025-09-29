@@ -25,6 +25,7 @@ The main components are:
 1.  **Induction Motor Model**: A standard three-phase asynchronous machine block representing the motor.
 2.  **Three-Phase Inverter**: A universal bridge block that supplies voltage to the motor based on switching signals.
 3.  **DTC Controller**: This is the core of the system and contains the following parts:
+
 a. **Flux and Torque Estimator**: Calculates the stator flux magnitude, flux angle (sector), and electromagnetic torque based on the motor's stator voltages and currents.
    
 ![Figure 2: Flux and Torque Estimator](Images/estimation_flux_subsystem_border.png)
