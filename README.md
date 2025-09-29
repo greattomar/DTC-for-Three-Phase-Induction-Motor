@@ -19,8 +19,6 @@ Direct Torque Control (DTC) is a sophisticated vector control technique used for
 
 The control system was designed and simulated in Simulink. The model consists of several key subsystems that work together to achieve precise torque control.
 
-*(**Action for you**: Take a screenshot of your main Simulink model and save it as `dtc_model.png` inside an `images` folder in your repository. The text below describes a typical model.)*
-
 ![Figure 1: High-level block diagram of the DTC system in Simulink.](Images/DTC_complete_circuit.png)
 
 The main components are:
@@ -28,6 +26,7 @@ The main components are:
 2.  **Three-Phase Inverter**: A universal bridge block that supplies voltage to the motor based on switching signals.
 3.  **DTC Controller**: This is the core of the system and contains the following parts:
     * **Flux and Torque Estimator**: Calculates the stator flux magnitude, flux angle (sector), and electromagnetic torque based on the motor's stator voltages and currents.
+   
 ![Figure 2: Flux and Torque Estimator](Images/estimation_flux_subsystem_border.png)
     * **Hysteresis Comparators**: Two-level comparators for torque and three-level comparators for flux that compare the estimated values with the reference commands.
     * **Optimal Switching Table**: Selects the appropriate inverter voltage vector based on the outputs from the hysteresis comparators and the current flux sector.
