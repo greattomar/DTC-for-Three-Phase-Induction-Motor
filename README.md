@@ -38,7 +38,7 @@ b. **Torque Estimator**: Calculates the stator flux magnitude, flux angle (secto
 c. **Hysteresis Comparators**: Two-level comparators for torque and three-level comparators for flux that compare the estimated values with the reference commands.
 d. **Optimal Switching Table**: Selects the appropriate inverter voltage vector based on the outputs from the hysteresis comparators and the current flux sector.
 
-<script src="https://gist.github.com/greattomar/35a14e939093ce76a17e7cace8ee59ca.js"></script>
+https://gist.github.com/greattomar/35a14e939093ce76a17e7cace8ee59ca
 
 
 ---
