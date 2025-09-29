@@ -44,7 +44,7 @@ The core of the control strategy is the optimal switching table, which is implem
 
 The complete implementation is shown below:
 
-![Switching Table Code](https://gist.github.com/greattomar/35a14e939093ce76a17e7cace8ee59ca)
+![Switching Table Code](https://gist-it.appspot.com/github/greattomar/35a14e939093ce76a17e7cace8ee59ca)
 
 
 ---
