@@ -49,6 +49,11 @@ The core of the control strategy is the optimal switching table, which is implem
 
 The core of the control strategy is the optimal switching table, which is implemented in an **Embedded MATLAB Function** block. This code determines which voltage vector the inverter should apply based on the digitized errors from the torque and flux hysteresis controllers, as well as the current stator flux sector.
 
+*### Optimal Switching Table Logic
+
+The core of the control strategy is the optimal switching table, which is implemented in an **Embedded MATLAB Function** block. This code determines which voltage vector the inverter should apply based on the digitized errors from the torque and flux hysteresis controllers, as well as the current stator flux sector.
+
+
 *```matlab
 function V = fcn(d_psi, d_Te, sector)
 % This function implements the optimal switching table for a Direct Torque
@@ -71,74 +76,110 @@ V = V0;
 switch sector
     case 1
         if (d_psi == 1)
-            if (d_Te == 1);     V = V2;
-            elseif (d_Te == 0); V = V7;
-            else;               V = V6;
+            if (d_Te == 1)
+                V = V2;
+            elseif (d_Te == 0)
+                V = V7;
+            else
+                V = V6;
             end
         else % d_psi == 0
-            if (d_Te == 1);     V = V3;
-            elseif (d_Te == 0); V = V0;
-            else;               V = V5;
+            if (d_Te == 1)
+                V = V3;
+            elseif (d_Te == 0)
+                V = V0;
+            else
+                V = V5;
             end
         end
     case 2
         if (d_psi == 1)
-            if (d_Te == 1);     V = V3;
-            elseif (d_Te == 0); V = V7;
-            else;               V = V4;
+            if (d_Te == 1)
+                V = V3;
+            elseif (d_Te == 0)
+                V = V7;
+            else
+                V = V4;
             end
         else % d_psi == 0
-            if (d_Te == 1);     V = V1;
-            elseif (d_Te == 0); V = V0;
-            else;               V = V6;
+            if (d_Te == 1)
+                V = V1;
+            elseif (d_Te == 0)
+                V = V0;
+            else
+                V = V6;
             end
         end
     case 3
         if (d_psi == 1)
-            if (d_Te == 1);     V = V4;
-            elseif (d_Te == 0); V = V7;
-            else;               V = V5;
+            if (d_Te == 1)
+                V = V4;
+            elseif (d_Te == 0)
+                V = V7;
+            else
+                V = V5;
             end
         else % d_psi == 0
-            if (d_Te == 1);     V = V2;
-            elseif (d_Te == 0); V = V0;
-            else;               V = V1;
+            if (d_Te == 1)
+                V = V2;
+            elseif (d_Te == 0)
+                V = V0;
+            else
+                V = V1;
             end
         end
     case 4
         if (d_psi == 1)
-            if (d_Te == 1);     V = V5;
-            elseif (d_Te == 0); V = V7;
-            else;               V = V6;
+            if (d_Te == 1)
+                V = V5;
+            elseif (d_Te == 0)
+                V = V7;
+            else
+                V = V6;
             end
         else % d_psi == 0
-            if (d_Te == 1);     V = V3;
-            elseif (d_Te == 0); V = V0;
-            else;               V = V2;
+            if (d_Te == 1)
+                V = V3;
+            elseif (d_Te == 0)
+                V = V0;
+            else
+                V = V2;
             end
         end
     case 5
         if (d_psi == 1)
-            if (d_Te == 1);     V = V6;
-            elseif (d_Te == 0); V = V7;
-            else;               V = V1;
+            if (d_Te == 1)
+                V = V6;
+            elseif (d_Te == 0)
+                V = V7;
+            else
+                V = V1;
             end
         else % d_psi == 0
-            if (d_Te == 1);     V = V4;
-            elseif (d_Te == 0); V = V0;
-            else;               V = V3;
+            if (d_Te == 1)
+                V = V4;
+            elseif (d_Te == 0)
+                V = V0;
+            else
+                V = V3;
             end
         end
     case 6
         if (d_psi == 1)
-            if (d_Te == 1);     V = V1;
-            elseif (d_Te == 0); V = V7;
-            else;               V = V2;
+            if (d_Te == 1)
+                V = V1;
+            elseif (d_Te == 0)
+                V = V7;
+            else
+                V = V2;
             end
         else % d_psi == 0
-            if (d_Te == 1);     V = V5;
-            elseif (d_Te == 0); V = V0;
-            else;               V = V4;
+            if (d_Te == 1)
+                V = V5;
+            elseif (d_Te == 0)
+                V = V0;
+            else
+                V = V4;
             end
         end
 end
