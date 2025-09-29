@@ -21,7 +21,7 @@ The control system was designed and simulated in Simulink. The model consists of
 
 *(**Action for you**: Take a screenshot of your main Simulink model and save it as `dtc_model.png` inside an `images` folder in your repository. The text below describes a typical model.)*
 
-*Figure 1: High-level block diagram of the DTC system in Simulink.*
+![Figure 1: High-level block diagram of the DTC system in Simulink.](Images/DTC_complete_circuit.png)
 
 The main components are:
 1.  **Induction Motor Model**: A standard three-phase asynchronous machine block representing the motor.
