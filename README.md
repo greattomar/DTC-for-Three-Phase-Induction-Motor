@@ -19,7 +19,7 @@ Direct Torque Control (DTC) is a sophisticated vector control technique used for
 
 The control system was designed and simulated in Simulink. The model consists of several key subsystems that work together to achieve precise torque control.
 
-![Figure 1: High-level block diagram of the DTC system in Simulink.](Images/DTC_complete_circuit.png)
+![Figure 1: High-level block diagram of the DTC system in Simulink.](Images/ss_200.png)
 
 The main components are:
 1.  **Induction Motor Model**: A standard three-phase asynchronous machine block representing the motor.
